@@ -107,7 +107,7 @@ fig.add_trace(go.Scatter(
     y=df['ANDROID'],
     name = 'Android Ver. ' + df7.at[5,'Value'],
     connectgaps=True,
-    text = "hello fren" 
+    #text = "this will pop up on hover over" 
 ))
 fig.add_trace(go.Scatter(
     x=df['dateTested'],
