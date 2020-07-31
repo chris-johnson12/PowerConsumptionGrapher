@@ -1,0 +1,78 @@
+{
+    "receiver":[
+        {
+            "name":"receiver1",
+            "locale":"en_US",
+            "mmol":false
+        },
+		    {
+            "name":"receiver2",
+            "locale":"en_US",
+			"rx_port":"40",
+            "mmol":false
+        }
+    ],
+    "ios":[
+        {
+	  "name": "DEXIPHONE6007",
+      "os_version": "13",
+      "model": "iphone6",
+      "udid": "2d9ef315edafc048e5e84bcf486d5ace49faef6f",
+      "address": "10.3.204.15",
+      "bundleid": "com.dexcominc.G6",
+      "subtype": "service",
+      "locale": "en_US",
+      "mmol": false,
+	   "new_setup_file":false,
+	   "app": "/Users/rvantassel/Documents/G6-US-1.6.3-16018-enterprise.ipa"
+        }
+    ],
+     "android":[ 
+		{
+			"name":  "SM-G930V2",
+			"os_version":  "7.0",
+			"model":  "SM-G930V",
+			"address":  "10.3.204.25",
+			"subtype":  "service",
+			"udid":  "98897a443543355459",
+			"locale":  "en_US",
+			"server_configuration_location":  "/sdcard/Documents/SetupConfiguration.properties",
+			"mmol":  false,
+			"new_setup_file":  false,
+			"app": "C:/Projects/apk/app-cgm-1.4.2.2-debug.apk",
+			"bundleid":  "com.dexcom.g6"
+        }
+	    ],
+    "transmitter":[
+        {
+             "name":"transmitter",
+            "txid":"822291",
+			"txid_to_flash":"0x10210921",
+            "comport":"COM13",
+            "batteryComPort" : "COM12",
+			"RenataLowVoltage" : "2.5",
+			"RenataCriticalVoltage" : "2.38",
+			"MaxellLowVoltage" : "2.84",
+			"MaxellCriticalVoltage" : "2.38",
+			"calibOffset" : "0.015", 
+            "normal_operating_interval" : 300,
+            "test_operating_interval" : 300,
+			"configured_firmware_version" : "02270195",
+			"configured_software_number" : "12097",
+			"configured_transmitter_version" : "02270195",
+			"configured_api_version" : "03",
+			"configured_nordic_version" : "02270195",
+			"configured_software_device_version" : "089859",
+			"configured_nordic_hardware_id" : "0000",
+			"configured_hardware_version" : "FF",
+			"image_to_flash" : "C:\\Projects\\Tools\\Flasher\\G6FireflyFlasher\\SW12097_JTAG_merged_V2.27.1.98_62a3abc.hex",
+			"jtag_id" : "50117890",
+			"secondsToRun" : "7200"
+        }
+    ],
+
+   
+	"appium_server":["http://10.3.204.26:4723/wd/hub", "http://10.3.100.136:4723/wd/hub"],
+	"device_type":"Android"
+		
+}
